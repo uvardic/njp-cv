@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <br/>
+  <div class="card" style="margin-bottom: 10px" *ngFor="let post of posts">
+    <div class="card-header bold">{{post.getTitle()}}</div>
+    <div class="card-body">
+      {{post.getContent()}}
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-md-11">Number of likes: {{post.getLikes()}}</div>
+        <button class="btn btn-outline-secondary" (click)="post.likePost()">Like</button>
+      </div>
+    </div>
+  </div>
+  <br/>
+</div>

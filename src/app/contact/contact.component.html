@@ -1,0 +1,64 @@
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <hr class="light-100">
+    <div class="col-12">
+      <h3>Contact me</h3>
+    </div>
+    <hr class="light-100">
+  </div>
+  <form (ngSubmit)="handleSubmit(firstName.value, lastName.value, email.value, message.value)">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="firstName">First name</label>
+        <input type="text"
+               class="form-control"
+               id="firstName"
+               placeholder="First name"
+               ngModel
+               name="firstName"
+               #firstName="ngModel"
+        >
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastName">Last name</label>
+        <input type="text"
+               class="form-control"
+               id="lastName"
+               placeholder="Last name"
+               ngModel
+               name="lastName"
+               #lastName="ngModel"
+        >
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="email">Email</label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               placeholder="Email"
+               required
+               ngModel
+               name="email"
+               #email="ngModel"
+        >
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="message">Message</label>
+        <textarea class="form-control"
+                  rows="5"
+                  id="message"
+                  placeholder="Message"
+                  required
+                  ngModel
+                  name="message"
+                  #message="ngModel"
+        ></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-outline-secondary">Send message</button>
+  </form>
+</div>

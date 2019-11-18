@@ -1,0 +1,19 @@
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+.social a {
+  font-size: 3.5em;
+  padding: 3rem;
+}
+
+.social a i {
+  color: #d5d5d5;
+}
+
+.social a i:hover {
+  color: #222222;
+}
+
